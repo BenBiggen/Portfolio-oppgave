@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 24px;
+    height: 100%;
+    background-color: #c0b4b4;
+}
+
+#venstre {
+    grid-area: v;
+}
+#høyre {
+    grid-area: h;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: "v h";
+    height: 100vh;
+    gap: 24px;
+}
+
