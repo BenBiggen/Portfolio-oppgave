@@ -5,11 +5,11 @@ html, body {
     background-color: #c0b4b4;
 }
 
-#venstre {
-    grid-area: v;
+#bilde {
+    grid-area: main;
 }
-#høyre {
-    grid-area: h;
+#header {
+    grid-area: header;
 }
 
 
@@ -17,7 +17,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto;
-    grid-template-areas: "v h";
+    grid-template-areas: 
+    "header"
+    "main";
     height: 100vh;
     gap: 24px;
 }
